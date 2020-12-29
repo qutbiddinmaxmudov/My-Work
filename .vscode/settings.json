@@ -1,4 +1,8 @@
 {
     "editor.suggest.showIssues": false,
-    "task.problemMatchers.neverPrompt": null
+    "task.problemMatchers.neverPrompt": null,
+    "outline.problems.enabled": false,
+    "terminal.integrated.showExitAlert": false,
+    "outline.problems.colors": false,
+    "outline.problems.badges": false
 }

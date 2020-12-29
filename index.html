@@ -14,18 +14,19 @@
 </head>
 
 <body class="body">
-  <header>
+  <header class="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <a href="#!" class="logo">
-          <div class="logo__before-lines">
-            <span class="logo__before-line"></span>
-          </div>
-          <span class="logo_purple">my</span>work
-          <div class="logo__after-lines">
-            <span class="logo__after-line"></span>
-          </div>
-        </a>
+        <a href="#!" class="logo"></a>
+        <button class="navbar-toggler fa header__toggler" data-bs-toggle="collapse" data-bs-target="#nav"></button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="ms-auto list-unstyled d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+            <li><a href="#!" class="me-0 header__link">About me</a></li>
+            <li><a href="#!" class="me-0 header__link">Works</a></li>
+            <li><a href="#!" class="me-0 header__button">to order</a></li>
+            <li><a href="#!" class="header__phone fa"></a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

@@ -1,4 +1,4 @@
-:root{
+:root {
   --montserrat: 'Montserrat';
   --trebuchet: 'Trebuchet';
   --primary-background: #ffffff;
@@ -8,79 +8,69 @@
   --primary-title-color: #7177F1;
 }
 
-.body{
+.body {
   background: var(--primary-background);
 }
 
-.logo{
-  display: flex;
-  align-items: center;
-  color: var(--primary-text-color);
+.header {
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+
+.logo {
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: var(--trebuchet);
-  font-weight: bold;
-  font-style: italic;
+}
+
+.logo::before {
+  content: url(../images/logo-light.png);
+}
+
+.logo::after {
+  content: url(../images/logo-dark.png);
+  display: none;
+}
+
+
+
+.header__link{
+  font-family: var(--montserrat);
   font-size: 24px;
-}
-
-.logo_purple{
   color: var(--primary-title-color);
+  text-decoration: none;
+  margin-right: 30px;
 }
 
-.logo__before-lines{
+
+.header__button{
+  width: 190px;
+  height: 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  margin-right: 2px;
-}
-
-.logo__before-line{
-  background: var(--primary-text-color);
-  height: 1px;
-  width: 27px;
-}
-
-.logo__before-lines::before{
-  content: "";
-  margin-right: -3px;
-  height: 1px;
-  background: var(--primary-text-color);
-  width: 18px;
-  margin-bottom: 7.5px;
-  align-self: flex-end;
-}
-.logo__before-lines::after{
-  content: "";
-  margin-right: 4.5px;
-  height: 1px;
-  background: var(--primary-text-color);
-  width: 36px;
-  margin-top: 7.5px;
-  align-self: flex-start;
-}
-
-.logo__after-lines{
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: var(--secondary-background);
+  color: var(--secondary-text-color);
+  font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin-right: 60px;
+  border-radius: 8px;
 }
 
-.logo__after-lines::before,
-.logo__after-lines::after{
-  content: "";
-  background: var(--primary-title-color);
-  height: 1px;
-  width: 27px;
-  filter: blur(2px);
+.header__button:hover{
+  color: var(--secondary-text-color);
+  background: var(--secondary-background);
 }
 
-.logo__after-line{
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
-  background: var(--primary-title-color);
-  height: 1px;
-  width: 36px;
-  filter: blur(20px);
+.header__phone{
+  color: var(--primary-title-color);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.header__phone::before{
+  content: "\f87b";
+}
+
+.header__toggler::before{
+  content: '\f0c9';
 }
