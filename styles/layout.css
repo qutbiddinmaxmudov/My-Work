@@ -193,3 +193,42 @@
   width: 100%;
   object-fit: contain;
 }
+
+.rectangle_1{
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  left: 100px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #9297EF;
+  transform: matrix(0.71, 0.71, -0.7, 0.71, 0, 0);
+}
+.rectangle_2{
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: 240px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #790FF1;
+  border-radius: 100%;
+}
+.rectangle_3{
+  position: absolute;
+  z-index: -1;
+  top: 300px;
+  right: 300px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #7177F1;
+}
+.rectangle_4{
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  right: 160px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #9297EF;
+}
