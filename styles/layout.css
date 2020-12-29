@@ -6,6 +6,11 @@
   --primary-text-color: #323232;
   --secondary-text-color: #ffffff;
   --primary-title-color: #7177F1;
+  scroll-behavior: smooth;
+}
+
+.row{
+  --bs-gutter-x: 30px;
 }
 
 .body {
@@ -73,4 +78,118 @@
 
 .header__toggler::before{
   content: '\f0c9';
+}
+
+/* Intro-block */
+
+.intro{
+  position: relative;
+  margin-top: 30px;
+}
+
+.intro__left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.intro__description{
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  font-family: var(--montserrat);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.intro__title{
+  color: var(--primary-title-color);
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 25px; 
+}
+
+.intro__button{
+  height: 45px;
+  background: var(--secondary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: var(--montserrat);
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+  margin-bottom: 50px;
+  align-self: center;
+  transition: 0.5s;
+}
+
+.intro__button:hover{
+  color: var(--primary-text-color);
+  background: var(--primary-background);
+}
+
+.intro__brands-logo{
+  width: 77px;
+  margin-bottom: 15px;
+}
+
+.intro__brand{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro__brands-logo_purple{
+  color: #790FF1;
+  width: 100px;
+}
+
+.intro__brands-name{
+  font-weight: 900;
+  font-family: var(--montserrat);
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #7177F1;
+}
+
+.intro__images{
+  position: relative;
+  overflow: hidden;
+}
+
+.intro__indicators{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.intro__dot{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #828282;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 0px 15px;
+}
+
+.intro__dot.active{
+  background: #7177F1;
+}
+
+.intro__img{
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  object-fit: contain;
 }
