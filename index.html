@@ -96,30 +96,66 @@
     </section><!-- About end -->
     
     <section class="capabilities">
-      <div class="container">
+      <div class="container"> <!-- Container -->
         <h2 class="capabilities__title">capabilities</h2>
-        <div class="row align-items-center">
-          <div class="capabilities__left accordion col-6" id="accordion">
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="capabilities__button" data-bs-toggle="collapse" data-bs-target="#one">
-                  <img src="images/html.png" alt="HTML logo" class="capabilities__icon">
-                  HTML
-                  <i class="fa capabilities__caret"></i>
-                </button>
-              </h3>
-              <div id="one" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+        <div class="row flex-wrap-reverse justify-content-center align-items-center"> <!-- Row -->
+          <div class="col-12 col-md-10 col-lg-6"> <!-- Left side start -->
+            <div class="capabilities__left accordion " id="accordion"> <!-- Accordion start -->
+              <div class="accordion-item"> <!-- Accordion item start -->
+                <h3 class="accordion-header">
+                  <button class="capabilities__button" data-bs-toggle="collapse" data-bs-target="#one">
+                    <div class="text-center capabilities__icon-block">
+                      <img src="images/html.png" alt="HTML logo" class="capabilities__icon">
+                    </div>
+                    HTML
+                    <i class="fa capabilities__caret"></i>
+                  </button>
+                </h3>
+                <div id="one" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+                  </div>
                 </div>
+              </div> <!-- Accordion item end -->
+              <div class="accordion-item"> <!-- Accordion item start -->
+                <h3 class="accordion-header">
+                  <button class="capabilities__button collapsed" data-bs-toggle="collapse" data-bs-target="#two">
+                    <div class="text-center capabilities__icon-block">
+                      <img src="images/css.png" alt="CSS logo" class="capabilities__icon">
+                    </div>
+                    CSS
+                    <i class="fa capabilities__caret"></i>
+                  </button>
+                </h3>
+                <div id="two" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+                  </div>
+                </div> <!-- Accordion item end -->
               </div>
-            </div>
-          </div>
-          <div class="capabilities__right col-6">
+              <div class="accordion-item"> <!-- Accordion item start -->
+                <h3 class="accordion-header">
+                  <button class="capabilities__button collapsed" data-bs-toggle="collapse" data-bs-target="#three">
+                    <div class="text-center capabilities__icon-block">
+                      <svg class="capabilities__icon_purple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                    </div>
+                    bootstrap 5
+                    <i class="fa capabilities__caret"></i>
+                  </button>
+                </h3>
+                <div id="three" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+                  </div>
+                </div>
+              </div> <!-- Accordion item end -->
+            </div> <!-- Accordion end -->
+          </div> <!-- Left side end -->
+          <div class="capabilities__right col-12 col-lg-6 mb-5 mb-lg-0"> <!-- Right side -->
             <img src="images/capability.png" class="w-100" alt="Human working on pc and smiling">
-          </div>
-        </div>
-      </div>
+          </div> <!-- Right side -->
+        </div> <!-- Row -->
+      </div><!-- Container -->
     </section>
   </main>
   <footer></footer>
