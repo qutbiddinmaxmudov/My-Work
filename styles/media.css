@@ -2,6 +2,9 @@
   .about__bg{
     top: -300px;
   }
+  .work__bg{
+    top: 0;
+  }
 }
 
 @media(max-width:1200px) {
@@ -30,4 +33,9 @@
   }
 }
 
-@media(max-width:576px) {}
+@media(prefers-color-scheme: dark){
+  :root{
+  --primary-background: #151437;
+  --primary-text-color: #FFFFFF;
+  }
+}
